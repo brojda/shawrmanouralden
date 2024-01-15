@@ -1,0 +1,50 @@
+<div class="col-xs-12 mt-4 col-md-6">
+  <img src="./images/Untitled design.png" class="rounded w-100 float-end"  alt="">
+</div>
+<div class="col-xs-12 col-md-6 text-center mt-3">
+  <h3 class="text-center bold">شاورما</h3>
+  <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">عرض</button>
+</div>
+<div class="col-12 mt-3">
+  <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="card card-body border-none">
+      <div id="sub-category-1-container">
+        <h6 class="text-secondary" style="font-family: 'IBM Plex Sans Arabic', sans-serif;">سندويش</h6>
+      </div>
+      <div class="card">
+        <img src="./images/sh.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="w-100 d-flex justify-content-between">
+            <p class="card-text">سندويش شاورما</p>
+            <h5 class="card-title">2.5 د</h5>
+          </div>
+          <div class="mt-2">
+            <div class="input-group d-inline">
+              <button class="btn btn-dark rounded-bill" onclick="minus(1);">-</button>
+              <span class="mx-3" id="show-amount-1"> 1 </span>
+              <button class="btn btn-dark rounded-bill" onclick="plus(1);">+</button>
+            </div>
+            <input type="hidden" id="amount-1" value="1">
+            <button class="btn btn-outline-primary d-inline-block" name="button" onclick="addToCart(1);">أضف الى السلة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- cart item -->
+<div class="border d-flex justify-content-between rounded align-items-center mt-1" id="cart-item-1">
+  <div>
+    <span class="text-danger p-2" onclick="deleteFromCart(1);"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16"><path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/></svg></span>
+    <div class="ms-2 input-group d-inline">
+      <input type="hidden" id="cart-amount-1" value="1">
+      <button class="btn btn-primary rounded-bill" onclick="minusCart(1);">-</button>
+      <span class="mx-3" id="show-cart-amount-1"> 1 </span>
+      <button class="btn btn-primary rounded-bill" onclick="plusCart(1);">+</button>
+    </div>
+    <span>شاورما</span>
+  </div>
+  <img src="./images/sh.png" width="100" alt="">
+</div>
